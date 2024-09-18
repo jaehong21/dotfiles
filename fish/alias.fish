@@ -13,7 +13,7 @@ abbr --add colima-network-clean "rm -rf ~/.colima/_lima/_networks/user-v2"
 abbr --add tf "terraform"
 abbr --add tg "terragrunt"
 abbr --add k kubectl
-abbr --add kcs "kubectl config use-context"
+alias kcs="kubectl config use-context"
 # alias kns="kubectl config set-context --current --namespace"
 alias k9s="k9s -A"
 

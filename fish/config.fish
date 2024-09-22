@@ -22,9 +22,6 @@ for file in ~/dotfiles/fish/*.fish
   end
 end
 
-# ---- zoxide ----
-zoxide init fish | source
-
 # --- autojump ---
 [ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
 

@@ -26,6 +26,7 @@ end
 [ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
 
 # ---- mise ----
+set -Ux MISE_GLOBAL_CONFIG_FILE ~/dotfiles/mise.toml
 $BREW_PREFIX/opt/mise/bin/mise activate fish | source
 
 # ---- oh-my-posh ----

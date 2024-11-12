@@ -25,9 +25,19 @@ end
 # --- autojump ---
 [ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
 
+# --- fzf ---
+[ -f /opt/homebrew/bin/fzf ]; and fzf --fish | source
+alias f="cd (fd --type directory --hidden | fzf)"
+
 # ---- mise ----
 set -Ux MISE_GLOBAL_CONFIG_FILE ~/dotfiles/mise.toml
 $BREW_PREFIX/opt/mise/bin/mise activate fish | source
 
 # ---- oh-my-posh ----
 $BREW_PREFIX/bin/oh-my-posh init fish --config ~/dotfiles/oh-my-posh.toml | source
+
+# ---- postgresql@17 ----
+fish_add_path /opt/homebrew/opt/postgresql@17/bin
+
+# ---- argo-rollouts ----
+kubectl argo rollouts completion fish | source

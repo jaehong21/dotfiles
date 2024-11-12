@@ -1,6 +1,7 @@
 #!/usr/bin/env fish
 
 # ---- system ----
+alias ls="lsd"
 
 # ---- config ----
 abbr --add vc-clean "rm -rf ~/.local/state/nvim/swap ~/.local/state/nvim/lsp.log"
@@ -16,6 +17,12 @@ abbr --add k kubectl
 alias kcs="kubectl config use-context"
 # alias kns="kubectl config set-context --current --namespace"
 alias k9s="k9s -A"
+
+# ---- ansible ----
+abbr --add an "ansible"
+abbr --add anp "ansible-playbook"
+abbr --add and "ansible-doc"
+abbr --add anv "ansible-vault"
 
 # ---- python ----
 alias python="python3"

@@ -2,6 +2,7 @@
 
 # ---- system ----
 alias ls="lsd"
+alias cls="clear"
 
 # ---- config ----
 abbr --add vc-clean "rm -rf ~/.local/state/nvim/swap ~/.local/state/nvim/lsp.log"

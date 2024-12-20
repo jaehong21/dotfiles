@@ -6,6 +6,9 @@ function current_branch
   git rev-parse --abbrev-ref HEAD
 end
 
+abbr --add lg 'lazygit'
+
+alias ga='git add'
 alias gl='git pull'
 alias gp='git push'
 alias gb='git branch'

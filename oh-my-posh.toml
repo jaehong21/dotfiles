@@ -3,84 +3,84 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
 final_space = true
 
 [palette]
-  grey = '#6c6c6c'
-  primary = '#8ea0d3'
+grey = '#6c6c6c'
+primary = '#8ea0d3'
 
 [secondary_prompt]
-  foreground = 'p:primary'
-  background = 'transparent'
+foreground = 'p:primary'
+background = 'transparent'
 
 [transient_prompt]
-  template = '→ '
-  foreground = 'p:primary'
-  background = 'transparent'
+template = '→ '
+foreground = 'p:primary'
+background = 'transparent'
 
 [[blocks]]
-  type = 'prompt'
-  alignment = 'left'
+type = 'prompt'
+alignment = 'left'
 
-  [[blocks.segments]]
-    style = 'plain'
-    template = '{{ .Path }}'
-    foreground = 'p:primary'
-    background = 'transparent'
-    type = 'path'
+[[blocks.segments]]
+style = 'plain'
+template = '{{ .Path }}'
+foreground = 'p:primary'
+background = 'transparent'
+type = 'path'
 
-    [blocks.segments.properties]
-      style = 'folder'
+[blocks.segments.properties]
+style = 'folder'
 
-  [[blocks.segments]]
-    style = 'plain'
-    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed)}}*{{ end }}<cyan>{{ if gt .Behind 0 }}⇣{{ .Behind }}{{ end }}{{ if gt .Ahead 0 }}⇡{{ .Ahead }}{{ end }}</>'
-    foreground = 'green'
-    background = 'transparent'
-    type = 'git'
+[[blocks.segments]]
+style = 'plain'
+template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed)}}*{{ end }}<cyan>{{ if gt .Behind 0 }}⇣{{ .Behind }}{{ end }}{{ if gt .Ahead 0 }}⇡{{ .Ahead }}{{ end }}</>'
+foreground = 'green'
+background = 'transparent'
+type = 'git'
 
-    [blocks.segments.properties]
-      branch_icon = ''
-      commit_icon = '@'
-      fetch_status = true
+[blocks.segments.properties]
+branch_icon = ''
+commit_icon = '@'
+fetch_status = true
 
-  [[blocks.segments]]
-    style = 'powerline'
-    template = ' ( {{.Profile}})'
-    foreground = '#ff9901'
-    background = 'transparent'
-    type = 'aws'
+[[blocks.segments]]
+style = 'powerline'
+template = ' (aws: {{.Profile}})'
+foreground = '#ff9901'
+background = 'transparent'
+type = 'aws'
 
-  [[blocks.segments]]
-    style = 'plain'
-    template = '(🪼{{ .Context }})'
-    foreground = '#89b4fb'
-    background = 'transparent'
-    type = 'kubectl'
+[[blocks.segments]]
+style = 'plain'
+template = '(kube: {{ .Context }})'
+foreground = '#89b4fb'
+background = 'transparent'
+type = 'kubectl'
 
-    [blocks.segments.properties]
-      display_error = true
-
-[[blocks]]
-  type = 'prompt'
-  alignment = 'left'
-  newline = true
-
-  [[blocks.segments]]
-    style = 'plain'
-    template = '→'
-    foreground = 'p:primary'
-    background = 'transparent'
-    type = 'text'
-    newline = true
+[blocks.segments.properties]
+display_error = true
 
 [[blocks]]
-  type = 'rprompt'
-  overflow = 'hide'
+type = 'prompt'
+alignment = 'left'
+newline = true
 
-  [[blocks.segments]]
-    style = 'plain'
-    template = '{{ .FormattedMs }}'
-    foreground = 'yellow'
-    background = 'transparent'
-    type = 'executiontime'
+[[blocks.segments]]
+style = 'plain'
+template = '→'
+foreground = 'p:primary'
+background = 'transparent'
+type = 'text'
+newline = true
 
-    [blocks.segments.properties]
-      threshold = 200
+[[blocks]]
+type = 'rprompt'
+overflow = 'hide'
+
+[[blocks.segments]]
+style = 'plain'
+template = '{{ .FormattedMs }}'
+foreground = 'yellow'
+background = 'transparent'
+type = 'executiontime'
+
+[blocks.segments.properties]
+threshold = 200

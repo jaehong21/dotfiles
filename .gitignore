@@ -4,3 +4,9 @@
 
 # secret
 secret.fish
+
+# k9s
+k9s/benchmarks/
+k9s/clusters/
+k9s/screen-dumps/
+

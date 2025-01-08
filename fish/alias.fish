@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+
 
 # ---- system ----
 alias ls="lsd"
@@ -17,6 +17,7 @@ abbr --add tg "terragrunt"
 abbr --add k kubectl
 alias kcs="kubectl config use-context"
 # alias kns="kubectl config set-context --current --namespace"
+set -Ux K9S_CONFIG_DIR "$HOME/dotfiles/k9s"
 alias k9s="k9s -A"
 
 # ---- ansible ----

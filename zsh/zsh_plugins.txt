@@ -1,0 +1,20 @@
+# .zsh_plugins.txt - comments begin with "#"
+
+# Basic Zsh plugins are defined in user/repo format
+jeffreytse/zsh-vi-mode
+wting/autojump path:bin
+
+# frameworks like oh-my-zsh are supported
+getantidote/use-omz        # handle OMZ dependencies
+ohmyzsh/ohmyzsh path:lib   # load OMZ's library
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/gh
+ohmyzsh/ohmyzsh path:plugins/kube-ps1
+ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages
+ohmyzsh/ohmyzsh path:plugins/magic-enter
+
+# popular fish-like plugins
+zsh-users/zsh-autosuggestions
+zdharma-continuum/fast-syntax-highlighting kind:defer
+zsh-users/zsh-history-substring-search

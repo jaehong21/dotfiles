@@ -2,8 +2,13 @@
 .vscode
 .idea
 
+# generated
+.zsh_plugins.zsh
+zsh_plugins.zsh
+
 # secret
 secret.fish
+secret.zsh
 
 # k9s
 k9s/benchmarks/

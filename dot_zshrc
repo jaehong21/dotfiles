@@ -34,7 +34,7 @@ alias i='istioctl'
 alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fzf)'
 
 # mise
-echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
+eval "$(mise activate zsh)"
 
 # bat
 alias bat='bat --paging=never --style=plain'

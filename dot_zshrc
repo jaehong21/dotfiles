@@ -62,5 +62,4 @@ eval "$(starship init zsh)"
 
 # fzf
 source <(fzf --zsh)
-export FZF_DEFAULT_OPTS='--bind=alt-j:down,alt-k:up'
 alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'

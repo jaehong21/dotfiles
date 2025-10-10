@@ -7,8 +7,11 @@ terraform = "1.9.3"
 terragrunt = "latest"
 
 "npm:@anthropic-ai/claude-code" = "latest"
+"go:github.com/a-h/templ/cmd/templ" = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
 
 [settings]
+experimental = true
 
 [settings.npm]
 bun = true

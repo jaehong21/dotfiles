@@ -33,6 +33,7 @@ packages:
       - "lazygit"
       - "zoxide"
       - "neovim"
+      - "direnv"
 
     casks:
       - "kitty"

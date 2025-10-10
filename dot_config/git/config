@@ -9,3 +9,6 @@
 [gpg]
   	program = gpg
   	format = openpgp
+
+[core]
+    excludesfile = ~/.config/git/ignore

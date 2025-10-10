@@ -1,8 +1,8 @@
 # Basic Zsh plugins
-#jeffreytse/zsh-vi-mode
-zsh-users/zsh-autosuggestions
+# jeffreytse/zsh-vi-mode
+zsh-users/zsh-autosuggestions kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer
-#Aloxaf/fzf-tab
+Aloxaf/fzf-tab kind:defer
 
 # Oh-my-zsh plugins
 getantidote/use-omz # handle oh-my-zsh dependencies

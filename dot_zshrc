@@ -45,7 +45,7 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 
 # fzf
 source <(fzf --zsh)
-export FZF_DEFAULT_OPTS="--bind 'ctrl-j:down,ctrl-k:up'"
+export FZF_DEFAULT_OPTS="--bind=ctrl-j:accept,ctrl-k:kill-line"
 alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
 
 # zoxide

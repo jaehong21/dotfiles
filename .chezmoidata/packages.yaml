@@ -37,4 +37,5 @@ packages:
 
     casks:
       - "kitty"
+      - "1password"
       - "1password-cli"

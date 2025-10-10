@@ -4,11 +4,15 @@
   	signingkey = 5D40F4C4F02D860E
 
 [commit]
-  	gpgsign = true
+    gpgsign = true
 
 [gpg]
-  	program = gpg
-  	format = openpgp
+    program = gpg
+    format = openpgp
 
 [core]
+    pager = less -F -X
     excludesfile = ~/.config/git/ignore
+
+[init]
+    defaultBranch = main

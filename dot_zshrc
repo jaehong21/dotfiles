@@ -1,0 +1,56 @@
+autoload -Uz compinit && compinit
+
+export XDG_CONFIG_HOME=/Users/jetty/.config
+export XDG_DATA_HOME=/Users/jetty/.local/share
+
+# Add user's bin to PATH
+export PATH=$HOME/bin:$PATH
+
+# Antidote
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+antidote load
+
+# ENV variables
+export EDITOR='nvim'
+export AWS_PROFILE='default'
+
+# alias
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias n='nvim'
+
+alias cm='chezmoi'
+alias cme='chezmoi edit --apply'
+
+alias lg='lazygit'
+
+alias cc='claude'
+
+alias k='kubectl'
+alias i='istioctl'
+alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fzf)'
+
+# mise
+echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
+
+# bat
+alias bat='bat --paging=never --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
+# fzf
+source <(fzf --zsh)
+alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
+
+# zoxide
+eval "$(zoxide init zsh --cmd j)"
+
+# carapace
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
+
+# starship
+eval "$(starship init zsh)"

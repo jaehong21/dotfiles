@@ -1,0 +1,13 @@
+[tools]
+node = "lts"
+bun = "1.2.17"
+go = "1.24"
+
+"npm:@anthropic-ai/claude-code" = "latest"
+terraform = "1.9.3"
+terragrunt = "latest"
+
+[settings]
+
+[settings.npm]
+bun = true

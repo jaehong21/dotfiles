@@ -2,6 +2,7 @@ packages:
   darwin:
     brews:
       - "antidote"
+      - "age"
       - "git"
       - "bat"
       - "mise"
@@ -9,6 +10,7 @@ packages:
       - "carapace"
       - "lsd"
       - "kubernetes-cli"
+      - "helm"
       - "istioctl"
       - "starship"
       - "k9s"

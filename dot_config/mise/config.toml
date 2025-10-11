@@ -11,6 +11,7 @@ terragrunt = "latest"
 "go:github.com/gohugoio/hugo" = "v0.145.0"
 "go:github.com/a-h/templ/cmd/templ" = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
+"go:github.com/lasorda/protobuf-language-server" = "master"
 
 [settings]
 experimental = true

@@ -1,3 +1,7 @@
+# Start timer
+zmodload zsh/datetime
+zsh_start_time=$EPOCHREALTIME
+
 autoload -Uz compinit && compinit
 
 export XDG_CONFIG_HOME=$HOME/.config
@@ -63,3 +67,8 @@ eval "$(starship init zsh)"
 # fzf
 source <(fzf --zsh)
 alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
+
+# End timer and calculate duration
+zsh_end_time=$EPOCHREALTIME
+zsh_load_time=$(echo "$zsh_end_time - $zsh_start_time" | bc)
+echo "Zsh startup time: ${zsh_load_time} seconds"

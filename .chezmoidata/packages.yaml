@@ -36,6 +36,8 @@ packages:
       - "zoxide"
       - "neovim"
       - "direnv"
+      - "protobuf"
+      - "television"
 
     casks:
       - "kitty"

@@ -69,7 +69,7 @@ source <(fzf --zsh)
 alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
 
 # television
-eval "$(tv init zsh)"
+# eval "$(tv init zsh)"
 
 # End timer and calculate duration
 zsh_end_time=$EPOCHREALTIME

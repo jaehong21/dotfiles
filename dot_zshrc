@@ -34,7 +34,7 @@ alias cme='chezmoi edit --apply'
 
 alias lg='lazygit'
 
-alias cx='codex'
+alias co='codex'
 alias cc='claude'
 
 alias k='kubectl'

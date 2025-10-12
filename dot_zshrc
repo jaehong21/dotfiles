@@ -72,7 +72,7 @@ alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
 # eval "$(tv init zsh)"
 
 # codex
-eval "$(codex completion zsh)"
+# eval "$(codex completion zsh)"
 
 # End timer and calculate duration
 zsh_end_time=$EPOCHREALTIME

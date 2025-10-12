@@ -43,6 +43,8 @@ packages:
       - "docker-compose"
       - "docker-buildx"
       - "qemu"
+      - "helm-ls"
+      - "krew"
 
     casks:
       - "kitty"

@@ -44,6 +44,9 @@ alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fz
 alias tg='terragrunt'
 alias tf='terraform'
 
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # mise
 eval "$(mise activate zsh)"
 

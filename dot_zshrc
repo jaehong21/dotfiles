@@ -41,6 +41,9 @@ alias k='kubectl'
 alias i='istioctl'
 alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fzf)'
 
+alias tg='terragrunt'
+alias tf='terraform'
+
 # mise
 eval "$(mise activate zsh)"
 

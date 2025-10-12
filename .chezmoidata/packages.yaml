@@ -42,6 +42,7 @@ packages:
       - "docker"
       - "docker-compose"
       - "docker-buildx"
+      - "qemu"
 
     casks:
       - "kitty"

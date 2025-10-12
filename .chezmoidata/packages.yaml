@@ -38,6 +38,9 @@ packages:
       - "direnv"
       - "protobuf"
       - "television"
+      - "colima"
+      - "docker"
+      - "docker-compose"
 
     casks:
       - "kitty"

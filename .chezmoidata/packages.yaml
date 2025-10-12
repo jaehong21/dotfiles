@@ -41,6 +41,7 @@ packages:
       - "colima"
       - "docker"
       - "docker-compose"
+      - "docker-buildx"
 
     casks:
       - "kitty"

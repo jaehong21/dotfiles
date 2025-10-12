@@ -44,6 +44,10 @@ alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fz
 # mise
 eval "$(mise activate zsh)"
 
+# docker buildkit enable
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
+
 # bat
 alias bat='bat --paging=never --style=plain'
 alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'

@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+if ! command -v nix >/dev/null 2>&1; then
+  # Install Nix via Determinate Systems
+  # https://determinate.systems/nix/macos/overview/
+  curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --determinate
+fi
+
+{{ end -}}

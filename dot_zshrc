@@ -44,6 +44,11 @@ alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fz
 alias tg='terragrunt'
 alias tf='terraform'
 
+
+# tmux
+alias t='tmux'
+[ -f $HOME/.tmux.zsh ] && source $HOME/.tmux.zsh
+
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 

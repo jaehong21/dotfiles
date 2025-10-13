@@ -1,5 +1,5 @@
 customCommands:
-  - key: <c-a>
+  - key: G
     description: Pick AI commit
     command: aicommit2 --generate 5
     context: files

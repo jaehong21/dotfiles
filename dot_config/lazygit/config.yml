@@ -1,6 +1,6 @@
 customCommands:
   - key: G
     description: Pick AI commit
-    command: aicommit2 --generate 5
+    command: aicommit2 --generate 5 --auto-select=true
     context: files
     output: terminal

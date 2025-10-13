@@ -49,6 +49,7 @@ packages:
       - "tmux"
       - "sops"
       - "nixfmt"
+      - "ansible"
 
     casks:
       - "kitty"

@@ -45,6 +45,8 @@ packages:
       - "qemu"
       - "helm-ls"
       - "krew"
+      - "ollama"
+      - "tmux"
 
     casks:
       - "kitty"

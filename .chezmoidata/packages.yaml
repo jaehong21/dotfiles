@@ -50,6 +50,7 @@ packages:
       - "sops"
       - "nixfmt"
       - "ansible"
+      - "dust"
 
     casks:
       - "kitty"

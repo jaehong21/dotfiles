@@ -36,6 +36,7 @@ alias lg='lazygit'
 
 alias co='codex'
 alias cc='claude'
+alias cr='coderabbit'
 
 alias k='kubectl'
 alias i='istioctl'

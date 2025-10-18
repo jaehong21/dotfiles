@@ -15,6 +15,7 @@ terragrunt = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
+"cargo:git-cliff" = "latest"
 
 [settings]
 experimental = true

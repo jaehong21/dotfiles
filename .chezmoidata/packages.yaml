@@ -51,6 +51,7 @@ packages:
       - "nixfmt"
       - "ansible"
       - "dust"
+      - "clang-format"
 
     casks:
       - "kitty"

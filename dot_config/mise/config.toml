@@ -14,7 +14,6 @@ terragrunt = "latest"
 "go:github.com/a-h/templ/cmd/templ" = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
-"go:github.com/google/yamlfmt/cmd/yamlfmt" = "latest"
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
 "cargo:git-cliff" = "latest"
 

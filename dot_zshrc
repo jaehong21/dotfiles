@@ -82,7 +82,7 @@ eval "$(op completion zsh)"; compdef _op op # completion
 eval "$(starship init zsh)"
 
 # fx
-source <(fx --comp zsh)
+# source <(fx --comp zsh)
 
 # fzf
 source <(fzf --zsh)

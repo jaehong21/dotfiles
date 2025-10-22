@@ -52,6 +52,7 @@ packages:
       - "ansible"
       - "dust"
       - "clang-format"
+      - "fx"
 
     casks:
       - "kitty"

@@ -81,6 +81,9 @@ eval "$(op completion zsh)"; compdef _op op # completion
 # starship
 eval "$(starship init zsh)"
 
+# fx
+source <(fx --comp zsh)
+
 # fzf
 source <(fzf --zsh)
 alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'

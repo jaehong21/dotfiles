@@ -53,6 +53,8 @@ packages:
       - "dust"
       - "clang-format"
       - "fx"
+      - "nushell"
+      - "jaehong21/tap/hibiscus" # jaehong21/tap/hibiscus
 
     casks:
       - "kitty"

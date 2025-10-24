@@ -33,6 +33,7 @@ alias cm='chezmoi'
 alias cme='chezmoi edit --apply'
 
 alias lg='lazygit'
+alias hb='hibiscus'
 
 alias co='codex'
 alias cc='claude'

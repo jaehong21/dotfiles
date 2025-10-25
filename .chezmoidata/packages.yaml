@@ -58,6 +58,7 @@ packages:
 
     casks:
       - "kitty"
+      - "wezterm"
       - "1password"
       - "1password-cli"
       - "coderabbit"

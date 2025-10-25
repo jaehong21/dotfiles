@@ -6,21 +6,26 @@ python = "3.13"
 terraform = "1.9.3"
 terragrunt = "latest"
 
+# Code Assistants
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:@google/gemini-cli" = "latest"
 "npm:@openai/codex" = "latest"
 "npm:aicommit2" = "latest"
+
+# LSPs and formatters
 "npm:@vtsls/language-server" = "latest"
 "npm:@fsouza/prettierd" = "latest"
-"go:github.com/gohugoio/hugo" = "v0.145.0"
-"go:github.com/natesales/q" = "latest"
 "go:github.com/a-h/templ/cmd/templ" = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
 # rust-analyzer = `rustup component add rust-analyzer
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
-"cargo:git-cliff" = "latest"
 "cargo:stylua" = { version = "latest", features = "lua54" }
+
+# Binaries
+"go:github.com/gohugoio/hugo" = "v0.145.0"
+"go:github.com/natesales/q" = "latest"
+"cargo:git-cliff" = "latest"
 
 [settings]
 experimental = true

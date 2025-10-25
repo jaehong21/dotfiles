@@ -18,6 +18,7 @@ terragrunt = "latest"
 "npm:vscode-langservers-extracted" = "latest"
 "go:github.com/a-h/templ/cmd/templ" = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
+"go:github.com/google/yamlfmt/cmd/yamlfmt" = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
 "pipx:autotools-language-server" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer

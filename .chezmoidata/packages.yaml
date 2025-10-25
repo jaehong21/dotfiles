@@ -56,6 +56,7 @@ packages:
       - "nushell"
       - "jaehong21/tap/hibiscus" # jaehong21/tap/hibiscus
       - "lua-language-server"
+      - "yaml-language-server"
 
     casks:
       - "kitty"

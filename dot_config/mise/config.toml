@@ -18,6 +18,7 @@ terragrunt = "latest"
 "go:github.com/a-h/templ/cmd/templ" = "latest"
 "go:golang.org/x/tools/gopls" = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
+"pipx:autotools-language-server" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
 "cargo:stylua" = { version = "latest", features = "lua54" }

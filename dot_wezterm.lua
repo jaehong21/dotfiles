@@ -1,2 +1,1 @@
 local wezterm = require 'wezterm'
-

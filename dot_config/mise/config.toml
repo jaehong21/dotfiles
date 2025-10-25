@@ -17,6 +17,7 @@ terragrunt = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
 "cargo:git-cliff" = "latest"
+"cargo:stylua" = "latest"
 
 [settings]
 experimental = true

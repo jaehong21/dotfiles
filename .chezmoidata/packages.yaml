@@ -55,6 +55,7 @@ packages:
       - "fx"
       - "nushell"
       - "jaehong21/tap/hibiscus" # jaehong21/tap/hibiscus
+      - "lua-language-server"
 
     casks:
       - "kitty"

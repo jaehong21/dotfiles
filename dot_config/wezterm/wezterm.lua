@@ -164,23 +164,6 @@ config.keys = {
 		mods = "ALT",
 		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
 	},
-	{
-		key = "t",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.PromptInputLine({
-			description = "Enter new name for session",
-			action = wezterm.action_callback(function(window, pane, line)
-				if line then
-					wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
-				end
-			end),
-		}),
-	},
-	{
-		key = "r",
-		mods = "CMD|SHIFT",
-		action = wezterm.action.ShowLauncherArgs({ flags = "WORKSPACES" }),
-	},
 }
 
 -- Tab title format

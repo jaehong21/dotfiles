@@ -1,6 +1,7 @@
 [tools]
 node = "lts"
 bun = "1.3"
+deno = "latest"
 go = "1.24"
 python = "3.13"
 terraform = "1.9.3"

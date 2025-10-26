@@ -117,7 +117,7 @@ config.keys = {
 	{
 		key = "w",
 		mods = "CMD",
-		action = wezterm.action.CloseCurrentPane({ confirm = true }),
+		action = wezterm.action.CloseCurrentPane({ confirm = false }),
 	},
 	-- Vertical split (Cmd+D)
 	{

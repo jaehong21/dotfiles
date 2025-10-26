@@ -45,6 +45,7 @@ packages:
       - "ansible"
       - "nushell"
       - "uv"
+      - "ruff"
       - "helm-ls"
 
       # --- Docker ---

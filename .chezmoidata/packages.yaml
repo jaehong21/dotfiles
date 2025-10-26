@@ -24,6 +24,7 @@ packages:
       - "tmux"
       - "carapace"
       - "antidote"
+      - "croc"
 
       # --- Encryption ---
       - "gnupg"

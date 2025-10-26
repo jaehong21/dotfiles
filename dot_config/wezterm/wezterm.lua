@@ -2,6 +2,9 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
+-- General
+config.window_close_confirmation = "NeverPrompt"
+
 -- Initial window size
 config.initial_cols = 132
 config.initial_rows = 36

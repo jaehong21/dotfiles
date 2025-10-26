@@ -164,6 +164,18 @@ config.keys = {
 		mods = "ALT",
 		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
 	},
+	-- Move current tab left
+	{
+		key = ",",
+		mods = "CMD|SHIFT",
+		action = wezterm.action.MoveTabRelative(-1),
+	},
+	-- Move current tab right
+	{
+		key = ".",
+		mods = "CMD|SHIFT",
+		action = wezterm.action.MoveTabRelative(1),
+	},
 }
 
 -- Tab title format

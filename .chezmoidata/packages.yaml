@@ -48,6 +48,7 @@ packages:
       - "uv"
       - "ruff"
       - "helm-ls"
+      - "hashicorp/tap/terraform-ls"
 
       # --- Docker ---
       - "colima"

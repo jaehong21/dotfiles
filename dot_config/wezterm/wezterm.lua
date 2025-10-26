@@ -12,7 +12,8 @@ config.line_height = 1.1
 config.font = wezterm.font("Hack Nerd Font")
 
 -- Colors
-local bg = "#222436" -- Tokyo Night Moon
+local bg = "#24263A" -- Tokyo Night Moon
+
 config.color_scheme = "Tokyo Night Moon"
 config.colors = {
 	cursor_bg = "white",
@@ -61,6 +62,17 @@ config.keys = {
 		key = "k",
 		mods = "CMD",
 		action = wezterm.action.SendKey({ key = "L", mods = "CTRL" }),
+	},
+	-- Forward-word, Back-word
+	{
+		key = "LeftArrow",
+		mods = "ALT",
+		action = wezterm.action.SendString("\x1bb"),
+	},
+	{
+		key = "RightArrow",
+		mods = "ALT",
+		action = wezterm.action.SendString("\x1bf"),
 	},
 	-- Tab navigator
 	{

@@ -1,5 +1,4 @@
 local wezterm = require("wezterm")
-
 local config = wezterm.config_builder()
 
 -- General
@@ -78,11 +77,11 @@ config.keys = {
 		action = wezterm.action.SendString("\x1bf"),
 	},
 	-- Tab navigator
-	{
+	--[[ {
 		key = "r",
 		mods = "CMD|SHIFT",
 		action = wezterm.action.ShowTabNavigator,
-	},
+	}, ]]
 	-- Toggle full screen
 	{
 		key = "f",
@@ -99,7 +98,8 @@ config.keys = {
 	{
 		key = "t",
 		mods = "CMD",
-		action = wezterm.action.SpawnCommandInNewTab({ cwd = wezterm.home_dir }),
+		-- action = wezterm.action.SpawnCommandInNewTab({ cwd = wezterm.home_dir }),
+		action = wezterm.action.SpawnTab("CurrentPaneDomain"), -- default
 	},
 	-- Open URL
 	{
@@ -163,6 +163,23 @@ config.keys = {
 		key = "l",
 		mods = "ALT",
 		action = wezterm.action.AdjustPaneSize({ "Right", 2 }),
+	},
+	{
+		key = "t",
+		mods = "CMD|SHIFT",
+		action = wezterm.action.PromptInputLine({
+			description = "Enter new name for session",
+			action = wezterm.action_callback(function(window, pane, line)
+				if line then
+					wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
+				end
+			end),
+		}),
+	},
+	{
+		key = "r",
+		mods = "CMD|SHIFT",
+		action = wezterm.action.ShowLauncherArgs({ flags = "WORKSPACES" }),
 	},
 }
 

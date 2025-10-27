@@ -18,6 +18,11 @@ antidote load
 export EDITOR='nvim'
 export AWS_PROFILE='default'
 
+acs() {
+  export AWS_PROFILE=$(aws configure list-profiles | fzf)
+  echo "Switched to AWS profile: $AWS_PROFILE"
+}
+
 # Secrets
 [ -f $HOME/.secrets.zsh ] && source $HOME/.secrets.zsh
 

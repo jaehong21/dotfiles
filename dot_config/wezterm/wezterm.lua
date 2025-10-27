@@ -167,13 +167,13 @@ config.keys = {
 	-- Move current tab left
 	{
 		key = ",",
-		mods = "CMD|SHIFT",
+		mods = "CTRL|SHIFT",
 		action = wezterm.action.MoveTabRelative(-1),
 	},
 	-- Move current tab right
 	{
 		key = ".",
-		mods = "CMD|SHIFT",
+		mods = "CTRL|SHIFT",
 		action = wezterm.action.MoveTabRelative(1),
 	},
 }

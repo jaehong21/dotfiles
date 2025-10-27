@@ -43,6 +43,8 @@ alias hb='hibiscus'
 alias co='codex'
 alias cc='claude'
 alias cr='coderabbit'
+alias ccusage='bunx ccusage@latest'
+alias cousage='bunx @ccusage/codex@latest'
 
 alias k='kubectl'
 alias i='istioctl'

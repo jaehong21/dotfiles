@@ -10,20 +10,12 @@ packages:
 
       # --- Encryption ---
       - "gnupg"
-      - "sops"
-      - "age"
 
       # --- Git ---
       - "git"
-      - "lazygit"
-      - "gh"
-      - "pre-commit"
 
       # --- LSPs, Formatters ---
-      - "clang-format"
       - "nixfmt"
-      - "yaml-language-server"
-      - "nushell"
       - "helm-ls"
 
       # --- Docker ---
@@ -34,7 +26,6 @@ packages:
       - "qemu"
 
       # --- AWS ---
-      - "awscli"
       - "jaehong21/tap/hibiscus"
 
     casks:

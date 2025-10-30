@@ -88,7 +88,7 @@ source <(carapace _carapace)
 eval "$(direnv hook zsh)"
 
 # 1password-cli
-eval "$(op completion zsh)"; compdef _op op # completion
+# eval "$(op completion zsh)"; compdef _op op # completion
 
 # starship
 eval "$(starship init zsh)"

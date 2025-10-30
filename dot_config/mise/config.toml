@@ -36,7 +36,7 @@ ruff = "latest"
 "pipx:autotools-language-server" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
-lua-language-server = "latest"
+"aqua:LuaLS/lua-language-server" = "latest"
 # "cargo:stylua" = { version = "latest", features = "lua54" }
 stylua = "latest"
 

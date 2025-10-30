@@ -29,8 +29,9 @@ gofumpt = "latest"
 yamlfmt = "latest"
 protobuf = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
+pipx = "latest"
+uv = "latest"
 ruff = "latest"
-"pipx:uv" = "latest"
 "pipx:autotools-language-server" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }

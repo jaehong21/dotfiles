@@ -15,6 +15,7 @@ packages:
       - "git"
 
       # --- LSPs, Formatters ---
+      - "clang-format"
       - "nixfmt"
       - "helm-ls"
 
@@ -29,8 +30,6 @@ packages:
       - "jaehong21/tap/hibiscus"
 
     casks:
-      - "kitty"
       - "wezterm"
       - "1password"
       - "1password-cli"
-      - "coderabbit"

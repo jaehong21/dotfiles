@@ -1,12 +1,14 @@
 [tools]
+# Languages and Runtimes
 node = "lts"
 bun = "1.3"
 deno = "latest"
 go = "1.24"
 python = "3.13"
 
-terraform = "1.9.3"
-terragrunt = "latest"
+# Package managers
+pipx = "latest"
+uv = "latest"
 
 # Code Assistants
 claude-code = "latest"
@@ -15,30 +17,28 @@ codex = "latest"
 "npm:aicommit2" = "latest"
 
 # LSPs and formatters
-"npm:@vtsls/language-server" = "latest"
+"aqua:LuaLS/lua-language-server" = "latest"
+"cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
+"go:github.com/a-h/templ/cmd/templ" = "latest"
+"go:github.com/lasorda/protobuf-language-server" = "master"
+"go:golang.org/x/tools/gopls" = "latest"
 "npm:@fsouza/prettierd" = "latest"
-"npm:vscode-langservers-extracted" = "latest"
+"npm:@microsoft/compose-language-service" = "latest"
 "npm:@tailwindcss/language-server" = "latest"
+"npm:@vtsls/language-server" = "latest"
 "npm:bash-language-server" = "latest"
 "npm:dockerfile-language-server-nodejs" = "latest"
-"npm:@microsoft/compose-language-service" = "latest"
-"go:github.com/a-h/templ/cmd/templ" = "latest"
-"go:golang.org/x/tools/gopls" = "latest"
-terraform-ls = "latest"
-shfmt = "latest"
-gofumpt = "latest"
-yamlfmt = "latest"
-protobuf = "latest"
-"go:github.com/lasorda/protobuf-language-server" = "master"
-pipx = "latest"
-uv = "latest"
-ruff = "latest"
+"npm:vscode-langservers-extracted" = "latest"
+"npm:yaml-language-server" = "latest"
 "pipx:autotools-language-server" = "latest"
-# rust-analyzer = `rustup component add rust-analyzer
-"cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
-"aqua:LuaLS/lua-language-server" = "latest"
-# "cargo:stylua" = { version = "latest", features = "lua54" }
+# rust-analyzer = `rustup component add rust-analyzer`
+gofumpt = "latest"
+protobuf = "latest"
+ruff = "latest"
+shfmt = "latest"
 stylua = "latest"
+terraform-ls = "latest"
+yamlfmt = "latest"
 
 # Kubernetes
 kubectl = "latest"
@@ -48,30 +48,47 @@ krew = "latest"
 istioctl = "latest"
 k9s = "latest"
 
-# Binaries
-neovim = "latest"
-direnv = "latest"
-bat = "latest"
-fd = "latest"
-ripgrep = "latest"
-jq = "latest"
-yq = "latest"
-fx = "latest"
-xh = "latest"
-lsd = "latest"
-zoxide = "latest"
-fzf = "latest"
-just = "latest"
-watchexec = "latest"
-television = "latest"
-starship = "latest"
-tmux = "latest"
-carapace = "latest"
+# IaC Tools
+terraform = "1.9.3"
+terragrunt = "latest"
 ansible = "latest"
-hugo = "v0.145.0"
-"go:github.com/natesales/q" = "latest"
+
+# CLI
+awscli = "latest"
+bat = "latest"
+carapace = "latest"
+direnv = "latest"
+fd = "latest"
+fx = "latest"
+fzf = "latest"
 git-cliff = "latest"
+hugo = "v0.145.0"
+jq = "latest"
+just = "latest"
+lsd = "latest"
+neovim = "latest"
+ripgrep = "latest"
+starship = "latest"
+television = "latest"
+tmux = "latest"
+watchexec = "latest"
+xh = "latest"
+yq = "latest"
+zoxide = "latest"
+"cargo:nu" = "latest" # nushell
+"go:github.com/natesales/q" = "latest"
+
+# Git Tools
+gh = "latest"
+lazygit = "latest"
+pre-commit = "latest"
+
+# Encryption
+sops = "latest"
+age = "latest"
 fnox = "latest"
+
+# Media
 ffmpeg = "latest"
 yt-dlp = "latest"
 gallery-dl = "latest"

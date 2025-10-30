@@ -15,8 +15,6 @@ codex = "latest"
 "npm:aicommit2" = "latest"
 
 # LSPs and formatters
-uv = "latest"
-ruff = "latest"
 "npm:@vtsls/language-server" = "latest"
 "npm:@fsouza/prettierd" = "latest"
 "npm:vscode-langservers-extracted" = "latest"
@@ -31,6 +29,8 @@ gofumpt = "latest"
 yamlfmt = "latest"
 protobuf = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
+ruff = "latest"
+"pipx:uv" = "latest"
 "pipx:autotools-language-server" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }

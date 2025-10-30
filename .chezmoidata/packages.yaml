@@ -3,26 +3,8 @@ packages:
     brews:
       # --- CLI ---
       - "mise"
-      - "neovim"
-      - "direnv"
-      - "bat"
-      - "fd"
-      - "ripgrep"
-      - "jq"
-      - "yq"
-      - "fx"
-      - "xh"
       - "htop"
       - "watch"
-      - "lsd"
-      - "zoxide"
-      - "fzf"
-      - "just"
-      - "watchexec"
-      - "television"
-      - "starship"
-      - "tmux"
-      - "carapace"
       - "antidote"
       - "croc"
 
@@ -43,7 +25,6 @@ packages:
       - "yaml-language-server"
       - "nushell"
       - "helm-ls"
-      - "hashicorp/tap/terraform-ls"
 
       # --- Docker ---
       - "colima"
@@ -55,11 +36,6 @@ packages:
       # --- AWS ---
       - "awscli"
       - "jaehong21/tap/hibiscus"
-
-      # --- Media ---
-      - "ffmpeg"
-      - "yt-dlp"
-      - "gallery-dl"
 
     casks:
       - "kitty"

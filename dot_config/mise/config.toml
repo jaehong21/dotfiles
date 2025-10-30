@@ -11,17 +11,19 @@ pipx = "latest"
 uv = "latest"
 
 # Code Assistants
-claude-code = "latest"
-gemini-cli = "latest"
-codex = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:@google/gemini-cli" = "latest"
+"npm:@openai/codex" = "latest"
 "npm:aicommit2" = "latest"
 
 # LSPs and formatters
 "aqua:LuaLS/lua-language-server" = "latest"
 "cargo:https://github.com/oxalica/nil" = { version = "branch:main", crate = "nil" }
 "go:github.com/a-h/templ/cmd/templ" = "latest"
+"go:github.com/google/yamlfmt/cmd/yamlfmt" = "latest"
 "go:github.com/lasorda/protobuf-language-server" = "master"
 "go:golang.org/x/tools/gopls" = "latest"
+"go:mvdan.cc/gofumpt" = "latest"
 "npm:@fsouza/prettierd" = "latest"
 "npm:@microsoft/compose-language-service" = "latest"
 "npm:@tailwindcss/language-server" = "latest"
@@ -32,13 +34,11 @@ codex = "latest"
 "npm:yaml-language-server" = "latest"
 "pipx:autotools-language-server" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer`
-gofumpt = "latest"
 protobuf = "latest"
 ruff = "latest"
 shfmt = "latest"
 stylua = "latest"
 terraform-ls = "latest"
-yamlfmt = "latest"
 
 # Kubernetes
 kubectl = "latest"

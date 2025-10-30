@@ -40,13 +40,8 @@ packages:
       # --- LSPs, Formatters ---
       - "clang-format"
       - "nixfmt"
-      - "lua-language-server"
       - "yaml-language-server"
-      - "protobuf"
-      - "ansible"
       - "nushell"
-      - "uv"
-      - "ruff"
       - "helm-ls"
       - "hashicorp/tap/terraform-ls"
 
@@ -56,13 +51,6 @@ packages:
       - "docker-compose"
       - "docker-buildx"
       - "qemu"
-
-      # --- Kubernetes ---
-      - "kubernetes-cli"
-      - "helm"
-      - "krew"
-      - "istioctl"
-      - "k9s"
 
       # --- AWS ---
       - "awscli"

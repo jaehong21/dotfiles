@@ -54,6 +54,9 @@ alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fz
 alias tg='terragrunt'
 alias tf='terraform'
 
+alias an='ansible'
+alias anp='ansible-playbook'
+
 # wezterm
 alias we='wezterm'
 [ -f $HOME/.wezterm.zsh ] && source $HOME/.wezterm.zsh

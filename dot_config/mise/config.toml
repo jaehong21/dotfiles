@@ -90,7 +90,7 @@ fnox = "latest"
 
 # Media
 ffmpeg = "latest"
-yt-dlp = "latest"
+"pipx:yt-dlp" = "latest"
 gallery-dl = "latest"
 
 [settings]

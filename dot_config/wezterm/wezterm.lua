@@ -14,9 +14,10 @@ config.line_height = 1.1
 config.font = wezterm.font("Hack Nerd Font")
 
 -- Colors
-local bg = "#24263A" -- Tokyo Night Moon
+-- local bg = "#24263A" -- Tokyo Night Moon
+local bg = "#24263A" -- Catppuccin Macchiato
 
-config.color_scheme = "Tokyo Night Moon"
+config.color_scheme = "Catppuccin Macchiato"
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",

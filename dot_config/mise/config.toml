@@ -94,8 +94,8 @@ fnox = "latest"
 
 # Media
 ffmpeg = "latest"
-"pipx:yt-dlp" = "latest"
-"pipx:gallery-dl" = "latest"
+# "pipx:yt-dlp" = "latest"
+# "pipx:gallery-dl" = "latest"
 
 [settings]
 experimental = true

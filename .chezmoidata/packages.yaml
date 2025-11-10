@@ -29,6 +29,10 @@ packages:
       # --- AWS ---
       - "jaehong21/tap/hibiscus"
 
+      # --- Media ---
+      - yt-dlp
+      - gallery-dl
+
     casks:
       - "wezterm"
       - "1password"

@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+if [ ! -f age.txt ]; then
+    op read --out-file age.txt "op://vault/age-key/fnox/age.txt"
+fi
+
+{{ end -}}

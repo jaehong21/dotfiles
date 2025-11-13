@@ -72,6 +72,9 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 # mise
 eval "$(mise activate zsh)"
 
+# fnox
+eval "$(fnox activate zsh)"
+
 # docker buildkit enable
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1

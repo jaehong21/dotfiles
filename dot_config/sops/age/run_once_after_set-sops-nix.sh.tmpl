@@ -2,7 +2,7 @@
 #!/bin/bash
 
 if [ ! -f keys.txt ]; then
-    op read --out-file keys.txt "op://Personal/sops-nix/keys.txt"
+    op read --out-file keys.txt "op://vault/age-key/sops-nix/keys.txt"
 fi
 
 {{ end -}}

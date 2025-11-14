@@ -24,6 +24,7 @@ packages:
       - "docker"
       - "docker-compose"
       - "docker-buildx"
+      - "docker-credential-helper"
       - "qemu"
 
       # --- AWS ---

@@ -50,6 +50,7 @@ helm-diff = "latest"
 krew = "latest"
 istioctl = "latest"
 k9s = "latest"
+argo = "latest"
 
 # IaC Tools
 terraform = "1.9.3"

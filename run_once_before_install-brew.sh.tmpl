@@ -1,4 +1,4 @@
-{{ if eq .chezmoi.os "darwin" -}}
+{{ if eq .osid "darwin" -}}
 #!/bin/bash
 
 if ! command -v brew >/dev/null 2>&1; then

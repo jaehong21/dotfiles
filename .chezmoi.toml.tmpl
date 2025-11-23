@@ -1,3 +1,12 @@
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end }}
+
 [git]
 {{"\t"}}autoCommit = true
 {{"\t"}}autoPush = false
+
+[data]
+{{"\t"}}osid = {{ $osid | quote }}
+

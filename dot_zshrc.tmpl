@@ -7,6 +7,7 @@ autoload -Uz compinit && compinit
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 
+{{ if eq .osid "darwin" -}}
 # Add user's bin to PATH
 export PATH=$HOME/bin:$PATH
 
@@ -112,6 +113,10 @@ alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
 
 # codex
 # eval "$(codex completion zsh)"
+{{ end -}}
+
+{{ if eq .osid "linux-arch" -}}
+{{ end -}}
 
 # End timer and calculate duration
 zsh_end_time=$EPOCHREALTIME

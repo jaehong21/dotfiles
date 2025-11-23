@@ -40,6 +40,7 @@ packages:
       - "1password-cli"
   linux:
     pacman:
+      - "base-devel"
       - "openssh"
       - "vim"
       - "chezmoi"
@@ -47,5 +48,6 @@ packages:
       - "htop"
       - "bc"
       - "zsh"
-      - "antidote"
       - "mise"
+    paru:
+      - "zsh-antidote"

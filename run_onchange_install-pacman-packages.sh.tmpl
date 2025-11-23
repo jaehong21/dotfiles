@@ -13,4 +13,15 @@ sudo pacman -S --needed --noconfirm \
   || true
 {{ end -}}
 
+# Install AUR packages with paru
+{{ if .packages.linux.paru -}}
+echo "Installing paru packages..."
+paru -S --needed --noconfirm \
+{{ range .packages.linux.paru -}}
+  {{ . | quote }} \
+{{ end -}}
+  || true
+{{ end -}}
+
+echo "Package installation complete."
 {{ end -}}

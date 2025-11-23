@@ -44,3 +44,4 @@ packages:
       - "vim"
       - "chezmoi"
       - "git"
+      - "mise"

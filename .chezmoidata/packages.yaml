@@ -49,5 +49,6 @@ packages:
       - "bc"
       - "zsh"
       - "mise"
+      - "tailscale"
     paru:
       - "zsh-antidote"

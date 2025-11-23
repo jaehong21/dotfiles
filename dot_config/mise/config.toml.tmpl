@@ -1,5 +1,4 @@
 [tools]
-
 {{ if eq .osid "darwin" -}}
 # Languages and Runtimes
 node = "lts"
@@ -106,6 +105,9 @@ ffmpeg = "latest"
 {{ end -}}
 
 {{ if eq .osid "linux-arch" -}}
+# Git Tools
+gh = "latest"
+lazygit = "latest"
 {{ end -}}
 
 [settings]

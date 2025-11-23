@@ -105,9 +105,38 @@ ffmpeg = "latest"
 {{ end -}}
 
 {{ if eq .osid "linux-arch" -}}
+# Languages and Runtimes
+node = "lts"
+bun = "1.3"
+go = "1.24"
+python = "3.13"
+
+# CLI
+awscli = "latest"
+bat = "latest"
+carapace = "latest"
+direnv = "latest"
+fd = "latest"
+fzf = "latest"
+gomigrate = "latest"
+jq = "latest"
+just = "latest"
+lsd = "latest"
+neovim = "latest"
+ripgrep = "latest"
+starship = "latest"
+yq = "latest"
+zoxide = "latest"
+"go:github.com/natesales/q" = "latest"
+
 # Git Tools
 gh = "latest"
 lazygit = "latest"
+
+# Encryption
+sops = "latest"
+age = "latest"
+fnox = "latest"
 {{ end -}}
 
 [settings]

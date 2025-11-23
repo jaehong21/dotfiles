@@ -116,6 +116,50 @@ alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
 {{ end -}}
 
 {{ if eq .osid "linux-arch" -}}
+# ENV variables
+export EDITOR='nvim'
+
+# alias
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias cat='bat'
+alias n='nvim'
+
+alias cm='chezmoi'
+alias cme='chezmoi edit --apply'
+
+alias lg='lazygit'
+
+# mise
+eval "$(mise activate zsh)"
+
+# fnox
+eval "$(fnox activate zsh)"
+
+# bat
+alias bat='bat --paging=never --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
+# zoxide
+eval "$(zoxide init zsh --cmd j)"
+
+# carapace
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# starship
+# eval "$(starship init zsh)"
+
+# fzf
+source <(fzf --zsh)
+alias f='cd $(fd --type directory --hidden --exclude .git | fzf)'
 {{ end -}}
 
 # End timer and calculate duration

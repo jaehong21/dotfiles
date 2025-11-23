@@ -1,0 +1,24 @@
+{{ if eq .osid "linux-arch" -}}
+#!/bin/bash
+
+set -e
+
+if ! command -v paru >/dev/null 2>&1; then
+  echo "Installing paru AUR helper..."
+
+  # Install base-devel if not already installed
+  sudo pacman -S --needed --noconfirm base-devel
+
+  # Clone and build paru
+  cd /tmp
+  git clone https://aur.archlinux.org/paru.git
+  cd paru
+  makepkg -si --noconfirm
+
+  # Clean up
+  cd ~
+  rm -rf /tmp/paru
+
+  echo "paru installed successfully!"
+fi
+{{ end -}}

@@ -1,0 +1,34 @@
+README.md
+
+# =================================================
+# macOS-only files (ignore on non-darwin systems)
+# =================================================
+{{ if ne .osid "darwin" }}
+
+# Shell configuration
+.zshrc
+.zprofile
+.zsh_plugins.txt
+.tmux.conf
+.tmux.zsh
+.wezterm.zsh
+
+# Docker configuration
+.docker/
+
+# Config directory files
+.config/aicommit2/
+.config/colima/
+.config/direnv/
+.config/fnox/
+.config/git/
+.config/k9s/
+.config/kitty/
+.config/lazygit/
+.config/mise/
+.config/sops/
+.config/starship.toml
+.config/television/
+.config/wezterm/
+
+{{ end }}

@@ -38,3 +38,9 @@ packages:
       - "wezterm"
       - "1password"
       - "1password-cli"
+  linux:
+    pacman:
+      - "openssh"
+      - "vim"
+      - "chezmoi"
+      - "git"

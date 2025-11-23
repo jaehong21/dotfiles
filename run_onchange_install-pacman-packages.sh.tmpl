@@ -1,0 +1,16 @@
+{{ if eq .osid "linux-arch" -}}
+#!/bin/bash
+
+set -e
+
+# Install official repository packages with pacman
+{{ if .packages.linux.pacman -}}
+echo "Installing pacman packages..."
+sudo pacman -S --needed --noconfirm \
+{{ range .packages.linux.pacman -}}
+  {{ . | quote }} \
+{{ end -}}
+  || true
+{{ end -}}
+
+{{ end -}}

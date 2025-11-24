@@ -7,18 +7,17 @@ packages:
       - "watch"
       - "antidote"
       - "croc"
-
+      # --- Mac ---
+      - "koekeishiya/formulae/yabai"
+      - "koekeishiya/formulae/skhd"
       # --- Encryption ---
       - "gnupg"
-
       # --- Git ---
       - "git"
-
       # --- LSPs, Formatters ---
       - "clang-format"
       - "nixfmt"
       - "helm-ls"
-
       # --- Docker ---
       - "colima"
       - "docker"
@@ -26,14 +25,11 @@ packages:
       - "docker-buildx"
       - "docker-credential-helper"
       - "qemu"
-
       # --- AWS ---
       - "jaehong21/tap/hibiscus"
-
       # --- Media ---
       - yt-dlp
       - gallery-dl
-
     casks:
       - "wezterm"
       - "1password"

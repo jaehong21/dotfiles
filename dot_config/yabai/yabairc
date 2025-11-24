@@ -1,30 +1,65 @@
+#!/usr/bin/env sh
+
+#
+# WARN: for this to work you must configure sudo such that
+# it will be able to run the command without password
+# +) Disable System Integrity Protection on macOS
+#
+# see this wiki page for information:
+#  - https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection
+#  - https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
+#
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
 # bsp, stack, or float
-yabai -m config layout bsp
-
-yabai -m config window_placement second_child
-
-yabai -m config split_type auto
-yabai -m config split_ratio 0.50
-
-# padding
-yabai -m config top_padding 6
-yabai -m config bottom_padding 6
-yabai -m config left_padding 6
-yabai -m config right_padding 6
-yabai -m config window_gap 6
-
-# mouse
-yabai -m config mouse_follows_focus on
-
-yabai -m config mouse_modifier alt
-# left click + drag
-yabai -m config mouse_action1 move
-# right click + drag
-yabai -m config mouse_action2 resize
-
-yabai -m mouse_drop_action swap
+yabai -m config \
+  mouse_follows_focus off \
+  focus_follows_mouse off \
+  window_origin_display default \
+  window_placement second_child \
+  window_zoom_persist on \
+  window_shadow on \
+  window_opacity_duration 0.0 \
+  active_window_opacity 1.0 \
+  normal_window_opacity 0.90 \
+  window_opacity off \
+  insert_feedback_color 0xffd75f5f \
+  split_ratio 0.50 \
+  split_type auto \
+  auto_balance off \
+  layout bsp \
+  mouse_modifier alt \
+  mouse_action1 move \
+  mouse_action2 resize \
+  mouse_drop_action swap \
+  top_padding 6 \
+  bottom_padding 6 \
+  left_padding 6 \
+  right_padding 6 \
+  window_gap 6
 
 # Disable specific apps
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add \
+  app="KakaoTalk|System Settings|Raycast|Telegram|CleanMyMac X|Finder|Exosphere" \
+  manage=off
+
+# window rules
+yabai -m rule --add \
+  app="Channel Talk" \
+  space=1
+yabai -m rule --add \
+  app="Slack" \
+  space=1
+yabai -m rule --add \
+  app="Brave Browser" \
+  space=3
+yabai -m rule --add \
+  app="Linear" \
+  space=4
+yabai -m rule --add \
+  app="Notion" \
+  space=5
+
+# apply rule for current windows
+yabai -m rule --apply

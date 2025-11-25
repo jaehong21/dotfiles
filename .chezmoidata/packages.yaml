@@ -47,6 +47,7 @@ packages:
       - "mise"
       - "tailscale"
       # GPU driver
+      - "linux-headers"
       - "mesa"
       - "nvidia"
       - "nvidia-utils"

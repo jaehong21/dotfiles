@@ -54,3 +54,5 @@ packages:
       - "libva-mesa-driver" # for AMD
     paru:
       - "zsh-antidote"
+      - "docker"
+      - "docker-compose"

@@ -56,3 +56,4 @@ packages:
       - "zsh-antidote"
       - "docker"
       - "docker-compose"
+      - "nvidia-container-toolkit"

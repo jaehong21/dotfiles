@@ -93,7 +93,10 @@ config.keys = {
 	{
 		key = "n",
 		mods = "CMD",
-		action = wezterm.action.SpawnCommandInNewWindow({ cwd = wezterm.home_dir }),
+		action = wezterm.action.SpawnCommandInNewWindow({
+			-- cwd = wezterm.home_dir,
+			domain = "CurrentPaneDomain",
+		}),
 	},
 	-- New tab in $HOME directory
 	{

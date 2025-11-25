@@ -46,5 +46,10 @@ packages:
       - "zsh"
       - "mise"
       - "tailscale"
+      # GPU driver
+      - "mesa"
+      - "nvidia"
+      - "nvidia-utils"
+      - "libva-mesa-driver" # for AMD
     paru:
       - "zsh-antidote"

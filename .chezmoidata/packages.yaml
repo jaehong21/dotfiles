@@ -54,7 +54,7 @@ packages:
       - "libva-mesa-driver" # for AMD
     paru:
       - ttf-nerd-fonts-symbols-mono
-      - wezterm-git
+      - wezterm
       - hyprland
       # zsh
       - "zsh-antidote"

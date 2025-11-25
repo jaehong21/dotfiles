@@ -53,7 +53,12 @@ packages:
       - "nvidia-utils"
       - "libva-mesa-driver" # for AMD
     paru:
+      - ttf-nerd-fonts-symbols-mono
+      - wezterm
+      - hyprland
+      # zsh
       - "zsh-antidote"
+      # docker
       - "docker"
       - "docker-compose"
       - "nvidia-container-toolkit"

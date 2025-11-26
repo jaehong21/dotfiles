@@ -54,8 +54,7 @@ packages:
       - "nvidia-utils"
       - "libva-mesa-driver" # for AMD
     paru:
-      - ttf-nerd-fonts-symbols-mono
-      - wezterm
+      - kitty
       - hyprland
       # zsh
       - "zsh-antidote"

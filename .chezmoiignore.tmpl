@@ -31,3 +31,10 @@ README.md
 .config/skhd/
 
 {{ end }}
+
+# =================================================
+# Arch-only files (ignore on non-arch systems)
+# =================================================
+{{ if ne .osid "linux-arch" }}
+.config/paru/
+{{ end }}

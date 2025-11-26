@@ -32,6 +32,7 @@ packages:
       - gallery-dl
     casks:
       - "wezterm"
+      - "kitty"
       - "1password"
       - "1password-cli"
   linux:

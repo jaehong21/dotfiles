@@ -91,9 +91,6 @@ sops = "latest"
 age = "latest"
 fnox = "latest"
 
-# Media
-ffmpeg = "latest"
-
 # Disabled Tools
 # deno = "latest"
 # java = "corretto-21.0.8"

@@ -28,6 +28,7 @@ packages:
       # --- AWS ---
       - "jaehong21/tap/hibiscus"
       # --- Media ---
+      - ffmpeg
       - yt-dlp
       - gallery-dl
     casks:
@@ -57,8 +58,10 @@ packages:
       - kitty
       - hyprland
       # zsh
-      - "zsh-antidote"
+      - zsh-antidote
       # docker
-      - "docker"
-      - "docker-compose"
-      - "nvidia-container-toolkit"
+      - docker
+      - docker-compose
+      - nvidia-container-toolkit
+      # media
+      - ffmpeg

@@ -1,10 +1,12 @@
-{{ if eq .osid "darwin" -}}
 #!/bin/bash
 
 if ! command -v nix >/dev/null 2>&1; then
   # Install Nix via Determinate Systems
   # https://determinate.systems/nix/macos/overview/
+{{ if eq .osid "darwin" -}}
   curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --determinate
-fi
-
 {{ end -}}
+{{ if eq .osid "linux-arch" -}}
+  curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+{{ end -}}
+fi

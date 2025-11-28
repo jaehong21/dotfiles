@@ -57,6 +57,13 @@ packages:
     paru:
       - kitty
       - hyprland
+      - wofi
+      - ttf-hack-nerd
+      - waybar
+      - brave-bin
+      - 1password
+      - 1password-cli
+      - nfs-utils
       # zsh
       - zsh-antidote
       # docker

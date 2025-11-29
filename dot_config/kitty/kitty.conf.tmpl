@@ -1,6 +1,11 @@
 # --- Font Configuration ---
 font_family         Hack Nerd Font
+{{ if eq .osid "darwin" -}}
 font_size           14.4
+{{ end -}}
+{{ if eq .osid "linux-arch" -}}
+font_size           12.0
+{{ end -}}
 bold_font           auto
 italic_font         auto
 bold_italic_font    auto
@@ -13,34 +18,44 @@ modify_font         cell_height +1px
 include themes/Catppuccin-Macchiato.conf
 
 # --- Keybindings ---
-# Last Cmd Result
-# map cmd+shift+p   launch --stdin-source=@last_cmd_output --type=clipboard
-
+{{ if eq .osid "darwin" -}}
 # Window Management
-# map cmd+t         new_tab_with_cwd
+map cmd+t         new_tab_with_cwd
 map cmd+n         new_os_window_with_cwd
 map cmd+d         launch --location=vsplit --cwd=current
 map cmd+j         launch --location=hsplit --cwd=current
 # Window Navigation
 map cmd+]         next_window
 map cmd+[         previous_window
-
-# Window Resizing
-# map opt+j         resize_window shorter 2
-# map opt+k         resize_window taller 2
-# map opt+h         resize_window wider 2
-# map opt+l         resize_window narrower 2
-
 # Window Actions
 map cmd+w         close_window
+map cmd+k         clear_terminal to_cursor active
 map cmd+o         open_url_with_hints
 map cmd+f         toggle_fullscreen
 map cmd+shift+r   load_config_file
+{{ end -}}
+
+{{ if eq .osid "linux-arch" -}}
+# Window Management
+map super+t       new_tab_with_cwd
+map super+n       new_os_window_with_cwd
+map super+d       launch --location=vsplit --cwd=current
+map super+j       launch --location=hsplit --cwd=current
+# Window Navigation
+map super+]       next_window
+map super+[       previous_window
+# Window Actions
+map super+w       close_window
+map super+k       clear_terminal to_cursor active
+map super+o       open_url_with_hints
+map super+f       toggle_fullscreen
+map super+shift+r load_config_file
+{{ end -}}
 
 # --- Window Layout ---
+# initial_window_width    1200
+# initial_window_height   800
 enabled_layouts         splits
-initial_window_width    1200
-initial_window_height   800
 window_padding_width    4
 
 # --- Tab Bar ---
@@ -48,11 +63,18 @@ tab_bar_edge          top
 tab_bar_style         powerline
 tab_powerline_style   slanted
 tab_bar_min_tabs      1
+{{ if eq .osid "darwin" -}}
 tab_title_template    {index}.{tab.active_wd.replace('/Users/jetty', '~').replace('/Users/jaehong21', '~').split('/')[-1]}
+{{ end -}}
+{{ if eq .osid "linux-arch" -}}
+tab_title_template    {index}.{tab.active_wd.replace('/home/jetty', '~').split('/')[-1]}
+{{ end -}}
 
 # --- OS Integration ---
 confirm_os_window_close 0
+{{ if eq .osid "darwin" -}}
 macos_titlebar_color    background
+{{ end -}}
 clipboard_max_size      0
 
 # --- Background ---

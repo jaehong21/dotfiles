@@ -59,6 +59,8 @@ alt - 2 : yabai -m space --focus 2
 alt - 3 : yabai -m space --focus 3
 alt - 4 : yabai -m space --focus 4
 alt - 5 : yabai -m space --focus 5
+alt - 5 : yabai -m space --focus 6
+alt - 5 : yabai -m space --focus 7
 shift + cmd - h : yabai -m space --focus prev
 shift + cmd - l : yabai -m space --focus next
 
@@ -68,6 +70,8 @@ shift + alt - 2 : yabai -m window --space 2
 shift + alt - 3 : yabai -m window --space 3
 shift + alt - 4 : yabai -m window --space 4
 shift + alt - 5 : yabai -m window --space 5
+shift + alt - 6 : yabai -m window --space 6
+shift + alt - 7 : yabai -m window --space 7
 
 shift + alt - h : yabai -m window --resize left:-30:0
 shift + alt - l : yabai -m window --resize right:30:0

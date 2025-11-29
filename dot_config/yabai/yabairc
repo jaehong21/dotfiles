@@ -33,15 +33,15 @@ yabai -m config \
   mouse_action1 move \
   mouse_action2 resize \
   mouse_drop_action swap \
-  top_padding 6 \
-  bottom_padding 6 \
-  left_padding 6 \
-  right_padding 6 \
-  window_gap 6
+  top_padding 8 \
+  bottom_padding 8 \
+  left_padding 8 \
+  right_padding 8 \
+  window_gap 8
 
 # Disable specific apps
 yabai -m rule --add \
-  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac X|Finder|Exosphere" \
+  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|Finder|1Password|Exosphere" \
   manage=off
 
 # window rules

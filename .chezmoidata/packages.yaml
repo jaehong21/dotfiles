@@ -61,6 +61,7 @@ packages:
       - wofi
       - ttf-hack-nerd
       - waybar
+      - hyprpaper
       - brave-bin
       - 1password
       - 1password-cli

@@ -54,6 +54,7 @@ packages:
       - "nvidia"
       - "nvidia-utils"
       - "libva-mesa-driver" # for AMD
+      - nvtop
     paru:
       - kitty
       - hyprland

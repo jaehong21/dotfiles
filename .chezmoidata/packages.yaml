@@ -1,59 +1,59 @@
 packages:
   darwin:
     brews:
-      # --- CLI ---
-      - "mise"
-      - "htop"
-      - "watch"
-      - "antidote"
-      - "croc"
-      # --- Mac ---
-      - "koekeishiya/formulae/yabai"
-      - "koekeishiya/formulae/skhd"
-      # --- Encryption ---
-      - "gnupg"
-      # --- Git ---
-      - "git"
-      # --- LSPs, Formatters ---
-      - "clang-format"
-      - "nixfmt"
-      - "helm-ls"
-      # --- Docker ---
-      - "colima"
-      - "docker"
-      - "docker-compose"
-      - "docker-buildx"
-      - "docker-credential-helper"
-      - "qemu"
-      # --- AWS ---
-      - "jaehong21/tap/hibiscus"
-      # --- Media ---
+      # CLI
+      - mise
+      - htop
+      - watch
+      - antidote
+      - croc
+      # Mac
+      - koekeishiya/formulae/yabai
+      - koekeishiya/formulae/skhd
+      # Encryption
+      - gnupg
+      # Git
+      - git
+      # LSP, Formatters
+      - clang-format
+      - nixfmt
+      - helm-ls
+      # Docker
+      - colima
+      - docker
+      - docker-compose
+      - docker-buildx
+      - docker-credential-helper
+      - qemu
+      # AWS
+      - jaehong21/tap/hibiscus
+      # Media
       - ffmpeg
       - yt-dlp
       - gallery-dl
     casks:
-      - "wezterm"
-      - "kitty"
-      - "1password"
-      - "1password-cli"
+      - wezterm
+      - kitty
+      - 1password
+      - 1password-cli
   linux:
     pacman:
-      - "base-devel"
-      - "openssh"
-      - "vim"
-      - "chezmoi"
-      - "git"
-      - "htop"
-      - "bc"
-      - "zsh"
-      - "mise"
-      - "tailscale"
+      - base-devel
+      - openssh
+      - vim
+      - chezmoi
+      - git
+      - htop
+      - bc
+      - zsh
+      - mise
+      - tailscale
       # GPU driver
-      - "linux-headers"
-      - "mesa"
-      - "nvidia"
-      - "nvidia-utils"
-      - "libva-mesa-driver" # for AMD
+      - linux-headers
+      - mesa
+      - nvidia
+      - nvidia-utils
+      - libva-mesa-driver # for AMD
       - nvtop
     paru:
       - kitty

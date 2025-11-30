@@ -10,6 +10,7 @@ packages:
       # Mac
       - koekeishiya/formulae/yabai
       - koekeishiya/formulae/skhd
+      - FelixKratz/formulae/sketchybar
       # Encryption
       - gnupg
       # Git
@@ -71,6 +72,7 @@ packages:
       # docker
       - docker
       - docker-compose
+      - docker-buildx
       - nvidia-container-toolkit
       # media
       - ffmpeg

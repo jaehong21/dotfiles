@@ -54,7 +54,7 @@ terragrunt = "latest"
 ansible = "latest"
 
 # CLI
-awscli = "latest"
+awscli = { version = "latest", symlink_bins = "true" }
 bat = "latest"
 carapace = "latest"
 direnv = "latest"

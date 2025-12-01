@@ -30,6 +30,7 @@ packages:
       - jaehong21/tap/hibiscus
       # Media
       - ffmpeg
+      - exiftool
       - yt-dlp
       - gallery-dl
     casks:

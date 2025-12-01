@@ -46,6 +46,7 @@ helm = "latest"
 helm-diff = "latest"
 krew = "latest"
 istioctl = "latest"
+cmctl = "latest"
 k9s = "latest"
 
 # IaC Tools

@@ -39,6 +39,7 @@ ruff = "latest"
 shfmt = "latest"
 stylua = "latest"
 terraform-ls = "latest"
+yamllint = "latest"
 
 # Kubernetes
 kubectl = "latest"

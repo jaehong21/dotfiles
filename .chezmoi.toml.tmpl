@@ -3,10 +3,13 @@
 {{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
 {{- end }}
 
+encryption = "age"
+[age]
+{{"\t"}}identities = ["~/.config/fnox/age.txt", "~/.config/sops/age/keys.txt"]
+{{"\t"}}recipients = ["age1fgs45gewp9z6uz20mkvmy4xypvwen9wnjhhhgjcsl0cy0pq3qqgs4vdpd7", "age1yf7jyfeexk7fa8cjj7fnqa53hpzpjwyhn20e0jldv5eef8t0lv2sh3aj5x"]
 [git]
 {{"\t"}}autoCommit = true
 {{"\t"}}autoPush = false
-
 [data]
 {{"\t"}}osid = {{ $osid | quote }}
 

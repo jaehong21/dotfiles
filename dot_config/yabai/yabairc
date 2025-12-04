@@ -41,7 +41,7 @@ yabai -m config \
 
 # Disable specific apps
 yabai -m rule --add \
-  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|CleanShot X|Finder|1Password|Exosphere" \
+  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|CleanShot X|Finder|1Password|TablePlus|Exosphere" \
   manage=off
 
 # window rules

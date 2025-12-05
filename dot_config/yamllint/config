@@ -10,4 +10,4 @@ rules:
   key-duplicates: enable
   line-length:
     max: 140
-
+  truthy: disable

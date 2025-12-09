@@ -33,13 +33,13 @@ uv = "latest"
 "npm:vscode-langservers-extracted" = "latest"
 "npm:yaml-language-server" = "latest"
 "pipx:autotools-language-server" = "latest"
+"pipx:yamllint" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer`
 protobuf = "latest"
 ruff = "latest"
 shfmt = "latest"
 stylua = "latest"
 terraform-ls = "latest"
-yamllint = "latest"
 
 # Kubernetes
 kubectl = "latest"

@@ -41,24 +41,29 @@ yabai -m config \
 
 # Disable specific apps
 yabai -m rule --add \
-  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|CleanShot X|Finder|1Password|TablePlus|Exosphere" \
+  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|CleanShot X|Finder|1Password|TablePlus|Yaak|Exosphere" \
   manage=off
 
 # window rules
 yabai -m rule --add \
   app="Channel Talk" \
+  manage=on \
   space=1
 yabai -m rule --add \
   app="Slack" \
+  manage=on \
   space=1
 yabai -m rule --add \
   app="Brave Browser" \
+  manage=on \
   space=3
 yabai -m rule --add \
   app="Linear" \
+  manage=on \
   space=4
 yabai -m rule --add \
   app="Notion" \
+  manage=on \
   space=5
 
 # apply rule for current windows

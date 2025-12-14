@@ -40,6 +40,7 @@ uv = "latest"
 "pipx:autotools-language-server" = "latest"
 "pipx:yamllint" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer`
+golangci-lint = "latest"
 protobuf = "latest"
 ruff = "latest"
 shfmt = "latest"

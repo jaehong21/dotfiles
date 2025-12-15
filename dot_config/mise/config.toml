@@ -1,6 +1,6 @@
 [tools]
 # Languages and Runtimes
-node = "lts"
+node = "24.11.1"
 bun = "1.3"
 go = "1.24"
 python = "3.13"

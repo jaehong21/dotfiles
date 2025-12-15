@@ -55,6 +55,7 @@ krew = "latest"
 istioctl = "latest"
 cmctl = "latest"
 k9s = "latest"
+kind = "latest"
 
 # IaC Tools
 terraform = "1.9.3"

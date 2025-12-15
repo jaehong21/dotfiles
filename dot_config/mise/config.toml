@@ -59,8 +59,8 @@ k9s = "latest"
 # IaC Tools
 terraform = "1.9.3"
 terragrunt = "latest"
-pulumi = "latest"
-ansible = "latest"
+# pulumi = "latest"
+# ansible = "latest"
 
 # CLI
 awscli = { version = "latest", symlink_bins = "true" }

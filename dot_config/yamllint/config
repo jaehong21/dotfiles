@@ -9,5 +9,6 @@ rules:
     max-end: 1
   key-duplicates: enable
   line-length:
+    level: warning
     max: 140
   truthy: disable

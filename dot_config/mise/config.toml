@@ -38,6 +38,7 @@ uv = "latest"
 "npm:vscode-langservers-extracted" = "latest"
 "npm:yaml-language-server" = "latest"
 "pipx:autotools-language-server" = "latest"
+"pipx:ty" = "latest"
 "pipx:yamllint" = "latest"
 # rust-analyzer = `rustup component add rust-analyzer`
 golangci-lint = "latest"

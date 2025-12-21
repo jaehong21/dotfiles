@@ -92,8 +92,9 @@ zoxide = "latest"
 
 "cargo:wasmtime-cli" = "latest"
 "cargo:xh" = "latest"
-"go:github.com/natesales/q" = "latest"
 "go:github.com/golang-migrate/migrate/v4/cmd/migrate" = { version = "latest", tags = "sqlite,postgres" }
+"go:github.com/natesales/q" = "latest"
+"npm:httpyac" = "latest"
 
 # Git Tools
 gh = "latest"

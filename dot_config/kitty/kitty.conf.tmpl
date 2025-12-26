@@ -33,6 +33,8 @@ map cmd+k         clear_terminal to_cursor active
 map cmd+o         open_url_with_hints
 map cmd+f         toggle_fullscreen
 map cmd+shift+r   load_config_file
+# Etc
+map shift+enter send_text all \e\r # newline when Shift+Enter in terminal
 {{ end -}}
 
 {{ if eq .osid "linux-arch" -}}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "catppuccin-macchiato",
+  "mcp": {
+    "context7": {
+      "type": "local",
+      "command": ["bunx", "-y", "@upstash/context7-mcp"]
+    }
+  },
+  "lsp": {
+    "yaml-ls": {
+      "command": ["yaml-language-server", "--stdio"],
+      "extensions": [".yaml", ".yml"]
+    },
+    "lua-ls": {
+      "command": ["lua-language-server"],
+      "extensions": [".lua"]
+    },
+    "terraform": {
+      "command": ["terraform-ls", "serve"],
+      "extensions": [".tf", ".tfvars", ".hcl"]
+    },
+    "nixd": { "disabled": true },
+    "nil-ls": {
+      "command": ["nil"],
+      "extensions": [".nix"]
+    },
+    "typescript": { "disabled": true },
+    "deno": { "disabled": true },
+    "vtsls": {
+      "command": ["vtsls", "--stdio"],
+      "extensions": [
+        ".ts",
+        ".tsx",
+        ".js",
+        ".jsx",
+        ".mjs",
+        ".cjs",
+        ".mts",
+        ".cts"
+      ]
+    },
+    "svelte": {
+      "command": ["svelteserver", "--stdio"],
+      "extensions": [".svelte"]
+    },
+    "pyright": { "disabled": true },
+    "ty": {
+      "command": ["ty", "server"],
+      "extensions": [".py"]
+    }
+  },
+  "formatter": {
+    "yamlfmt": {
+      "command": [
+        "yamlfmt",
+        "-formatter",
+        "retain_line_breaks_single=true,drop_merge_tag=true",
+        "$FILE"
+      ],
+      "extensions": [".yaml", ".yml"]
+    },
+    "terraform": { "disabled": true },
+    "terragrunt": {
+      "command": ["terragrunt", "hcl", "fmt", "$FILE"],
+      "extensions": [".hcl", ".tf", ".tfvars"]
+    },
+    "golangci-lint": {
+      "command": ["golangci-lint", "fmt", "$FILE"],
+      "extensions": [".go"]
+    },
+    "rustfmt": {
+      "command": ["rustfmt", "--edition", "2024", "$FILE"],
+      "extensions": [".rs"]
+    },
+    "prettier": { "disabled": true },
+    "prettierd": {
+      "command": ["prettierd", "--stdin-filepath", "$FILE"],
+      "extensions": [".ts", ".tsx", ".js", ".jsx", ".svelte", ".md", ".json"]
+    },
+    "uv": { "disabled": true },
+    "ruff": {
+      "command": ["ruff", "format", "$FILE"],
+      "extensions": [".py", "pyi"]
+    }
+  }
+}

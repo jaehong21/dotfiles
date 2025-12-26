@@ -18,6 +18,8 @@ antidote load
 # ENV variables
 export EDITOR='nvim'
 export AWS_PROFILE='default'
+export OPENCODE_DISABLE_LSP_DOWNLOAD='true'
+export OPENCODE_EXPERIMENTAL_LSP_TOOL='true'
 
 acs() {
   export AWS_PROFILE=$(aws configure list-profiles | fzf)

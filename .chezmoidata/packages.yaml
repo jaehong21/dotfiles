@@ -11,6 +11,7 @@ packages:
       - koekeishiya/formulae/yabai
       - koekeishiya/formulae/skhd
       - FelixKratz/formulae/sketchybar
+      - mole
       # Encryption
       - gnupg
       # Git

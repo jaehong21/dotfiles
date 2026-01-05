@@ -87,11 +87,11 @@ restic = "latest"
 ripgrep = "latest"
 starship = "latest"
 tmux = "latest"
+wasmtime = "latest"
 watchexec = "latest"
 yq = "latest"
 zoxide = "latest"
 
-"cargo:wasmtime-cli" = "latest"
 "cargo:xh" = "latest"
 "go:github.com/golang-migrate/migrate/v4/cmd/migrate" = { version = "latest", tags = "sqlite,postgres" }
 "go:github.com/natesales/q" = "latest"

@@ -4,7 +4,6 @@ README.md
 # macOS-only files (ignore on non-darwin systems)
 # =================================================
 {{ if ne .osid "darwin" }}
-
 # Shell configuration
 .zprofile
 .tmux.conf
@@ -15,20 +14,13 @@ README.md
 .docker/
 
 # Config directory files
-.config/aicommit2/
 .config/colima/
-.config/direnv/
-.config/fnox/
-.config/git/
 .config/k9s/
-.config/lazygit/
-.config/sops/
 .config/starship.toml
 .config/television/
 .config/wezterm/
 .config/yabai/
 .config/skhd/
-
 {{ end }}
 
 # =================================================

@@ -125,6 +125,8 @@ antidote load
 
 # ENV variables
 export EDITOR='nvim'
+export OPENCODE_DISABLE_LSP_DOWNLOAD='true'
+export OPENCODE_EXPERIMENTAL_LSP_TOOL='true'
 
 # alias
 alias ls='lsd'
@@ -139,6 +141,23 @@ alias cm='chezmoi'
 alias cme='chezmoi edit --apply'
 
 alias lg='lazygit'
+alias hb='hibiscus'
+
+alias co='codex'
+alias cc='claude'
+alias gc='gemini'
+alias oc='opencode'
+
+alias k='kubectl'
+alias i='istioctl'
+alias kcs='kubectl config use-context $(kubectl config get-contexts -o name | fzf)'
+
+alias tg='terragrunt'
+alias tf='terraform'
+
+alias an='ansible'
+alias anp='ansible-playbook'
+alias ang='ansible-galaxy'
 
 # mise
 eval "$(mise activate zsh)"

@@ -7,7 +7,6 @@ packages:
       - watch
       - antidote
       - croc
-      - ngrok
       # Mac
       - koekeishiya/formulae/yabai
       - koekeishiya/formulae/skhd
@@ -40,6 +39,7 @@ packages:
       - kitty
       - 1password
       - 1password-cli
+      - ngrok
   linux:
     pacman:
       - base-devel

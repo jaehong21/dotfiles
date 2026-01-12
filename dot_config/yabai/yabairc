@@ -41,8 +41,28 @@ yabai -m config \
 
 # Disable specific apps
 yabai -m rule --add \
-  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|CleanShot X|Finder|1Password|TablePlus|Yaak|Exosphere" \
+  app="KakaoTalk|System Settings|Raycast|Telegram|TickTick|Spotify|CleanMyMac|CleanShot X|DataGrip|Finder|1Password|Exosphere" \
   manage=off
+
+# scratchpad
+yabai -m rule --add \
+  app="OpenCode" \
+  scratchpad=opencode-scratchpad
+yabai -m rule --add \
+  app="TablePlus" \
+  scratchpad=tableplus-scratchpad
+yabai -m rule --add \
+  app="OpenCode" \
+  scratchpad=opencode-scratchpad
+yabai -m rule --add \
+  app="Claude" \
+  scratchpad=claude-scratchpad
+yabai -m rule --add \
+  app="OpenChamber" \
+  scratchpad=openchamber-scratchpad
+yabai -m rule --add \
+  app="Yaak" \
+  scratchpad=yaak-scratchpad
 
 # window rules
 yabai -m rule --add \
@@ -58,6 +78,10 @@ yabai -m rule --add \
   manage=on \
   space=3
 yabai -m rule --add \
+  app="Orion" \
+  manage=on \
+  space=3
+yabai -m rule --add \
   app="Linear" \
   manage=on \
   space=4
@@ -65,6 +89,10 @@ yabai -m rule --add \
   app="Notion" \
   manage=on \
   space=5
+yabai -m rule --add \
+  app="Obsidian" \
+  manage=on \
+  space=6
 
 # apply rule for current windows
 yabai -m rule --apply

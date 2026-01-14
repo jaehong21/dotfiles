@@ -41,7 +41,6 @@ packages:
       - 1password
       - 1password-cli
       - ngrok
-      - librewolf
   linux:
     pacman:
       - base-devel

@@ -9,9 +9,9 @@ packages:
       - croc
       - nushell
       # Mac
-      - koekeishiya/formulae/yabai
-      - koekeishiya/formulae/skhd
-      - FelixKratz/formulae/sketchybar
+      # - koekeishiya/formulae/yabai
+      # - koekeishiya/formulae/skhd
+      # - FelixKratz/formulae/sketchybar
       - mole
       # Encryption
       - gnupg

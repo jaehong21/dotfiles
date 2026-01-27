@@ -1,60 +1,26 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "catppuccin-macchiato",
-  "plugin": ["opencode-openai-codex-auth@4.2.0"],
-  "provider": {
-    "openai": {
-      "options": {
-        "reasoningEffort": "medium",
-        "reasoningSummary": "auto",
-        "textVerbosity": "medium",
-        "include": ["reasoning.encrypted_content"],
-        "store": false
-      },
-      "models": {
-        "gpt-5.2-codex-medium": {
-          "name": "GPT 5.2 Codex Medium (OAuth)",
-          "limit": {
-            "context": 272000,
-            "output": 128000
-          },
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          },
-          "options": {
-            "reasoningEffort": "medium",
-            "reasoningSummary": "auto",
-            "textVerbosity": "medium",
-            "include": ["reasoning.encrypted_content"],
-            "store": false
-          }
-        },
-        "gpt-5.2-codex-high": {
-          "name": "GPT 5.2 Codex High (OAuth)",
-          "limit": {
-            "context": 272000,
-            "output": 128000
-          },
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          },
-          "options": {
-            "reasoningEffort": "high",
-            "reasoningSummary": "detailed",
-            "textVerbosity": "medium",
-            "include": ["reasoning.encrypted_content"],
-            "store": false
-          }
-        }
-      }
-    }
-  },
   "mcp": {
     "context7": {
       "type": "local",
       "command": ["bunx", "-y", "@upstash/context7-mcp"]
+    },
+    "ck_search": {
+      "type": "local",
+      "command": ["ck", "--serve"]
+    },
+    "github": {
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ]
     }
   },
   "lsp": {
@@ -119,7 +85,7 @@
       "extensions": [".go"]
     },
     "rustfmt": {
-      "command": ["rustfmt", "--edition", "2024", "$FILE"],
+      "command": ["cargo", "fmt", "$FILE"],
       "extensions": [".rs"]
     },
     "prettier": { "disabled": true },

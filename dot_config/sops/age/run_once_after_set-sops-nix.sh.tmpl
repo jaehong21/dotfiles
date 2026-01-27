@@ -1,8 +1,5 @@
-{{ if eq .osid "darwin" -}}
 #!/bin/bash
 
 if [ ! -f keys.txt ]; then
     op read --out-file keys.txt "op://vault/age-key/sops-nix/keys.txt"
 fi
-
-{{ end -}}

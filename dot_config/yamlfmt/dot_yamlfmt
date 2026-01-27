@@ -1,0 +1,5 @@
+formatter:
+  type: basic
+  indent: 2
+  retain_line_breaks_single: true # default: false
+  drop_merge_tag: true # default: false

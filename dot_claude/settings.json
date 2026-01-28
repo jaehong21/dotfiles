@@ -1,0 +1,41 @@
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(chmod:*)",
+      "Bash(ck:*)",
+      "Bash(cp:*)",
+      "Bash(curl:*)",
+      "Bash(dig:*)",
+      "Bash(find:*)",
+      "Bash(gh pr create:*)",
+      "Bash(helm dep:*)",
+      "Bash(helm dependency:*)",
+      "Bash(helm show values:*)",
+      "Bash(helm template:*)",
+      "Bash(kubectl describe:*)",
+      "Bash(kubectl get:*)",
+      "Bash(kubectl top:*)",
+      "Bash(mkdir:*)",
+      "Bash(pkill:*)",
+      "Bash(python3:*)",
+      "Bash(tar:*)",
+      "Bash(tree:*)",
+      "Bash(uv run python:*)",
+      "Bash(uv sync:*)",
+      "WebSearch",
+      "mcp__ck-search__*",
+      "mcp__github__pull_request_read",
+      "mcp__plugin_context7_context7__*",
+      "mcp__plugin_linear_linear__get_issue"
+    ],
+    "deny": [],
+    "defaultMode": "acceptEdits"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bunx -y ccstatusline@latest",
+    "padding": 0
+  }
+}

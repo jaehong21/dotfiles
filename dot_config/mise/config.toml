@@ -15,6 +15,7 @@ claude = "latest"
 codex = "latest"
 "npm:opencode-ai" = "latest"
 "npm:@openchamber/web" = "latest"
+"npm:clawdbot" = "latest"
 "npm:@fission-ai/openspec" = "latest"
 "npm:aicommit2" = "latest"
 

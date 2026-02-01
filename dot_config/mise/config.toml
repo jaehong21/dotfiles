@@ -11,8 +11,8 @@ pipx = "latest"
 uv = "latest"
 
 # Coding Assistants
-claude = "latest"
 codex = "latest"
+"npm:@anthropic-ai/claude-code" = "latest"
 "npm:opencode-ai" = "latest"
 "npm:@openchamber/web" = "latest"
 "npm:openclaw" = "latest"

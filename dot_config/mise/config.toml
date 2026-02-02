@@ -104,6 +104,7 @@ zellij = "latest"
 zoxide = "latest"
 
 "cargo:xh" = "latest"
+"github:steipete/gogcli" = "latest"
 "go:github.com/golang-migrate/migrate/v4/cmd/migrate" = { version = "latest", tags = "sqlite,postgres" }
 "go:github.com/jpillora/chisel" = "latest"
 "go:github.com/natesales/q" = "latest"

@@ -18,6 +18,7 @@ codex = "latest"
 "npm:openclaw" = "latest"
 "npm:@fission-ai/openspec" = "latest"
 "npm:aicommit2" = "latest"
+"npm:mcporter" = "latest"
 
 # LSPs and formatters
 "aqua:LuaLS/lua-language-server" = "latest"

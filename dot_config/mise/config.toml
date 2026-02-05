@@ -104,7 +104,6 @@ yq = "latest"
 zellij = "latest"
 zoxide = "latest"
 
-"cargo:taws" = "latest"
 "cargo:xh" = "latest"
 "github:steipete/gogcli" = "latest"
 "go:github.com/golang-migrate/migrate/v4/cmd/migrate" = { version = "latest", tags = "sqlite,postgres" }
